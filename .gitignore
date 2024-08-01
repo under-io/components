@@ -1,0 +1,10 @@
+node_modules
+dist
+
+#storybook build directory
+storybook-static
+
+#under-io local npm packages
+under-io*.tgz
+
+*storybook.log

@@ -1,0 +1,24 @@
+{
+  "RFFC": {
+    "prefix": "rffc",
+    "body": [
+      "import { ComponentPropsWithoutRef, forwardRef, memo } from 'react'",
+      "",
+      "import { cn } from '~/utils'",
+      "",
+      "type T${1:$TM_FILENAME_BASE} = ComponentPropsWithoutRef<'div'> & {}",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = forwardRef<HTMLDivElement, T${1:$TM_FILENAME_BASE}>(({ className, children, ...props }, ref) => {",
+      "  return (",
+      "\t<div ref={ref} className={cn('', className)} {...props}>",
+      "\t  {children}",
+      "\t</div>",
+      "  )",
+      "})",
+      "${1:$TM_FILENAME_BASE}.displayName = '${1:$TM_FILENAME_BASE}'",
+      "",
+      "export default memo(${1:$TM_FILENAME_BASE})",
+      "",
+    ],
+  },
+}
